@@ -8,6 +8,8 @@ import SettingsSidebar from "./components/SettingsSidebar";
 function App() {
   const [selectedComponent, setSelectedComponent] = useState(null);
 
+  console.log(selectedComponent, "selected compo");
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div style={{ display: "flex", height: "100vh" }}>

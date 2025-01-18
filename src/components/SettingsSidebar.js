@@ -12,6 +12,8 @@ const SettingsSidebar = ({ selectedComponent, setSelectedComponent }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    console.log(name, value, "from set change");
     setSelectedComponent((prev) => ({ ...prev, [name]: value }));
   };
 
